@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.wrap {
+    margin: 40px auto;
+    width: 1200px;
+    
+    h1 {
+        font-size: 32px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    
+    form {
+        display: flex;
+        gap: 20px;
+        align-items: end;
+        margin-bottom: 40px;
+        
+        h3 {
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        input {
+            outline-color: rgba(0, 76, 255, 0.644);
+            border: 2px solid #aeaeae4b;
+            border-radius: 5px;
+            padding: 10px 20px;
+            
+            font-size: 20px;
+        }
+        
+        button {
+            border: 0;
+            border-radius: 5px;
+            background-color: rgb(0, 77, 255);
+            color: #fff;
+            height: fit-content;
+            padding: 13px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+
+table td, th {
+    border-bottom: 2px solid #7c7c7c46;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+
+    td {
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    td:nth-last-child(1) {
+        button {
+            cursor: pointer;
+            vertical-align: middle;
+            background: 0;
+            border: 0;
+            width: 30px;
+            margin-right: 5px;
+        }
+    }
+
+    th {
+        padding: 15px;
+        color: rgb(142, 154, 167);
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 10px;
+
+    .cross {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+        width: 20px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        gap: 20px;
+        align-items: end;
+        margin-bottom: 40px;
+        
+        h3 {
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        input {
+            outline-color: rgba(0, 76, 255, 0.644);
+            border: 2px solid #aeaeae4b;
+            border-radius: 5px;
+            padding: 10px 20px;
+            
+            font-size: 20px;
+        }
+        
+        button {
+            border: 0;
+            border-radius: 5px;
+            background-color: rgb(0, 77, 255);
+            color: #fff;
+            height: fit-content;
+            padding: 13px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes fade {
+    from{ scale: 0; }
+    to{ scale: 1; }
+}
+
+
+.fade {
+    animation: fade .5s ease;
+}

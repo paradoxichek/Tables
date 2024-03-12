@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changeble Table</title>
+    <link rel="stylesheet" href="./Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+    <div class="wrap">
+        <h1>добавление, изменение и удаление элемента из таблицы</h1>
+
+        <form name="tableForm">
+            <label for="name"> <h3>Имя кабачка</h3>
+                <input type="text" name="name" id="name" placeholder="Kabachok Kabachkov">
+            </label>
+
+            <label for="age"> <h3>Возраст кабачка</h3>
+                <input type="number" name="age" id="age" placeholder="69">
+            </label>
+
+            <button id="submit">Показать кабачка</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Имя кабачка</th>
+                    <th>Год кабачка</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>baber</td>
+                    <td>1942</td>
+                    <td>
+                        <button><img src="./img/edit_icon.svg" alt="edit"></button>
+                        <button><img src="./img/trash-bin.svg" alt="delete"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>semen</td>
+                    <td>1945</td>
+                    <td>
+                        <button><img src="./img/edit_icon.svg" alt="edit"></button>
+                        <button><img src="./img/trash-bin.svg" alt="delete"></button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <dialog class="fade">
+        <div class="modal-wrap">
+            <img class="cross" src="./img/cross.svg" alt="">
+            <h1>Чо ты хочешь бро, но запомни главное кабачки не меняются?</h1>
+
+            <form name="modalForm">
+                <label for="nameModal"> <h3>Имя кабачка</h3>
+                    <input type="text" name="name" id="nameModal" placeholder="Bruce Reyes">
+                </label>
+    
+                <label for="ageModal"> <h3>Возраст кабачка</h3>
+                    <input type="number" name="age" id="ageModal" placeholder="22">
+                </label>
+    
+                <button id="submitModal">Изменить кабачка</button>
+            </form>
+        </div>
+    </dialog>
+
+
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <table width="80%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>no</td>
+                <th>name</td>
+                <th>date</td>
+                <th>deeatgh</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>ghdbt</td>
+                <td>ghdbt</td>
+                <td>ghdbt</td>
+                <td>ghdbt</td>
+            </tr>
+        </tbody>
+    </table> -->
